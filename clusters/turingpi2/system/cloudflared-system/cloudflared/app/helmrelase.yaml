@@ -1,0 +1,16 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: cloudflared
+  namespace: cloudflared-system
+spec:
+  chart:
+    spec:
+      chart: cloudflare-tunnel
+      sourceRef:
+        kind: HelmRepository
+        name: cloudflared
+        namespace: flux-system
+      version: 0.3.2
+  interval: 30m

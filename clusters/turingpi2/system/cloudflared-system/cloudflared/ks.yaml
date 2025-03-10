@@ -1,0 +1,17 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: cloudflared
+  namespace: flux-system
+spec:
+  targetNamespace: cloudflared-system
+  path: ./clusters/turingpi2/system/cloudflared-system/cloudflared/app
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  prune: true
+  wait: true
+  interval: 30m
+  retryInterval: 1m
+  timeout: 5m
