@@ -11,6 +11,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./clusters/trusted/system
+  path: ./clusters/turingpi2/system
   prune: true
   wait: true
