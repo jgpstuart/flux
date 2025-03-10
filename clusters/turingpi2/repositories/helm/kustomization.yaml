@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - ./metallb.yaml
   - ./nginx.yaml
+  - ./cloudflared.yaml
