@@ -3,7 +3,7 @@ cloudflare:
     secretName: tunnel-credentials
     ingress:
       - hostname: blog.jstuart.ca
-        service: http://traefik.kubesystem:80
+        service: http://httpbin.default:80
 resources:
     limits:
         cpu: 100m
