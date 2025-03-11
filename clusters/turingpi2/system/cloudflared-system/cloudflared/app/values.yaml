@@ -1,6 +1,5 @@
 cloudflare:
     tunnelName: jstuart.ca
-    tunnelId: ENC[AES256_GCM,data:DcydBzWTuOehkPh55/aP8pxNWLAzLauYbRDeP3hq2eg1C5Ah,iv:svDrKO7A67hs1YQJYehBi3g4XVccwlNdCcN9sGASlcU=,tag:eNuP4hhVmEC6b2LuZkn/Ew==,type:str]
     secretName: tunnel-credentials
 resources:
     limits:
@@ -10,23 +9,3 @@ resources:
         cpu: 100m
         memory: 128Mi
 replicaCount: 1
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBScHRNempSUXA2aXNoL1gy
-            UDZnQlZRbkhsamtjQ2x0cXFFbitPK1B5V2lVCnNlNjZad013OXE0WHhwZXU5MEtN
-            ZEhVbXBhTkF2MkdMVkVDaTBrNFhYa3cKLS0tIDlpbk95Rjg2MDNqak80M0F0djYw
-            NEFmdFJmMDlVaTNQVEN6TkpKVXJhRWsKwdxI7COevD8bcB+AG8dYoOOw6yyQ/eHh
-            RB0DpUktV7aTUatVPZFKXFmVxEmMk1heqsyM35lnUlDBVydMtibpwA==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-11T01:10:17Z"
-    mac: ENC[AES256_GCM,data:gjnp97nscQXwE1wzO7I69HVYjhg0X+R5qsX/KnK7JU+EaHYMLxFwk8jYCB7vQeNWAVoaX0CHrCUaa8QFwPcaFEy5n89/X+nrERUQCuzDlL2mwNHOdJKTp6loqehzxzo7BRhySv+e4YXPjYtDNvp3k3/I005Qm4UYn6x4P+P06jg=,iv:1KHHSVM4IASLEjcpvqM+7DP46cmR1cyk9yrCowFCfY0=,tag:gc9uJgpE1yphGHlv4TbxXg==,type:str]
-    pgp: []
-    encrypted_regex: ^(tunnelId)$
-    version: 3.9.4
