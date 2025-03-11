@@ -14,3 +14,6 @@ spec:
         namespace: flux-system
       version: 0.3.2
   interval: 30m
+  valuesFrom:
+    - kind: ConfigMap
+      name: cloudflared-values
