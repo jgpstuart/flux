@@ -32,7 +32,7 @@ kind: Secret
 type: kubernetes.io/dockerconfigjson
 metadata:
     name: ghcr-login-secret
-    namespace: default
+    namespace: flux-system
 data:
     .dockerconfigjson: ENC[AES256_GCM,data:1R7dZL3XoEO+KNTaTSvBaNAXh2ohMT19jG3hNxyXU+cIE5sF+z0IRthUH+vdaym8O9XBTtYq/rOemNK/xE2YIxOq70RttrBg1e0KiAb18JQWiGiw03/6mGi32Z9hbdCIi449R3XDeUgqiKpa6J/dkXkVqCek6sBn+gEiKu2xl08tx7zvs9BTIg==,iv:oe7Q7cTS1h4t7LIUrYqAWs6WUx5KfCoeQjjPcjKIbTg=,tag:CT6aidM8y7dDj/II+xrEfQ==,type:str]
 sops:
