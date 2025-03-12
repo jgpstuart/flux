@@ -14,3 +14,6 @@ spec:
         namespace: flux-system
       version: 4.0.18
   interval: 30m
+  valuesFrom:
+    - kind: ConfigMap
+      name: nfs-values
