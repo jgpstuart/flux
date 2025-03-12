@@ -1,3 +1,4 @@
+---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
@@ -6,52 +7,3 @@ metadata:
 spec:
     interval: 30m
     url: https://helm.jstuart.ca/
-# apiVersion: v1
-# kind: Secret
-# type: kubernetes.io/dockerconfigjson
-# metadata:
-#     name: ghcr-login-secret
-#     namespace: default
-# data:
-#     .dockerconfigjson: eyJhdXRocyI6eyJnaGNyLmlvIjp7ImF1dGgiOiJhbWR3YzNSMVlYSjBPbWRvY0Y5cmJITmtia0pOZVVnNVoxUkRUbkp5Y0ZSUWFEVlFibXhtWVRSc1JWY3
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLa3g3WWErblRzblBDVERT
-            cHRvcy9MOWVVMkx1YmVaVSsyNjVJN2RkcVdBCnJyUjZQMFNuYWJFUGJMSlg5bm5P
-            MlEySTBXK0FINEp6S29lZ0IzTEZhQUkKLS0tIE1OSjVqdGpHbjZTUzB0a2NDVHlY
-            LzYxMTkxdjcxQlYvSWwyRlFSTytrek0K8ES4UmCfoFG4t+EVA8yAaDKQq76pbXId
-            do05FWMsVy1zqAXo9y6Tf7Fpn6bl6zjRHbnYEL325qj/WIbDvZpN8w==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T14:25:36Z"
-    mac: ENC[AES256_GCM,data:y6vHqRuN0xdWrJ4/Lhw1g97/FKgiwL0QfpvZ6jrwShpx5lfIiz5tyDguiX/VwygFQmAnaWtsEbTBYmIbiNyL2pNYRTs7xtCpD6kgy8fnhlEA4i4xiHEjU+Hm8tP+3rPVhNydSGUHGJ4KG6LA1fTK6+Y0SZhRnqhNkhDEarfA7NY=,iv:Jx3GPuGT6SPEgLVF/7aT9I0eaV7b6l0uLh74zgVIRFU=,tag:ydRJQmLpbGhyohTwpKLkLQ==,type:str]
-    pgp: []
-    encrypted_regex: ^(data)$
-    version: 3.9.4
----
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLa3g3WWErblRzblBDVERT
-            cHRvcy9MOWVVMkx1YmVaVSsyNjVJN2RkcVdBCnJyUjZQMFNuYWJFUGJMSlg5bm5P
-            MlEySTBXK0FINEp6S29lZ0IzTEZhQUkKLS0tIE1OSjVqdGpHbjZTUzB0a2NDVHlY
-            LzYxMTkxdjcxQlYvSWwyRlFSTytrek0K8ES4UmCfoFG4t+EVA8yAaDKQq76pbXId
-            do05FWMsVy1zqAXo9y6Tf7Fpn6bl6zjRHbnYEL325qj/WIbDvZpN8w==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T14:25:36Z"
-    mac: ENC[AES256_GCM,data:y6vHqRuN0xdWrJ4/Lhw1g97/FKgiwL0QfpvZ6jrwShpx5lfIiz5tyDguiX/VwygFQmAnaWtsEbTBYmIbiNyL2pNYRTs7xtCpD6kgy8fnhlEA4i4xiHEjU+Hm8tP+3rPVhNydSGUHGJ4KG6LA1fTK6+Y0SZhRnqhNkhDEarfA7NY=,iv:Jx3GPuGT6SPEgLVF/7aT9I0eaV7b6l0uLh74zgVIRFU=,tag:ydRJQmLpbGhyohTwpKLkLQ==,type:str]
-    pgp: []
-    encrypted_regex: ^(data)$
-    version: 3.9.4
