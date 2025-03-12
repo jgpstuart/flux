@@ -6,3 +6,4 @@ resources:
   - ./nginx.yaml
   - ./cloudflared.yaml
   - ./jstuart.yaml
+  - ./bitnami.yaml
