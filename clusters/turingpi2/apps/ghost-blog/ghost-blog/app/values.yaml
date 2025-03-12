@@ -1,0 +1,16 @@
+ghostUsername: jgpstuart@gmail.com
+existingSecret: "ghost-credentials"
+ghostBlogTitle: Hot Ginger&Dynamite
+ghostEnableHttps: false
+allowEmptyPassword: false
+resourcesPreset: "2xlarge"
+service:
+  type: NodePort
+ingress:
+  enabled: false
+  hostname: blog.jstuart.ca
+persistence:
+  size: 50G
+mysql:
+  auth:
+    existingSecret: "ghost-mysql-password"

@@ -1,0 +1,16 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: ghost-blog
+  namespace: homepage
+spec:
+  chart:
+    spec:
+      chart: bitnami/ghost
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami
+        namespace: flux-system
+      version: 22.1.19
+  interval: 30m
