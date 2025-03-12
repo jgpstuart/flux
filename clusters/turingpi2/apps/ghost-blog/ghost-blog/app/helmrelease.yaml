@@ -5,7 +5,12 @@ metadata:
   name: ghost-blog
   namespace: homepage
 spec:
-  chartRef:
-    kind: OCIRepository
-    name: bitnami-ghost
+  chart:
+    spec:
+      chart: bitnami/ghost
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami
+        namespace: flux-system
+      version: 22.1.19
   interval: 30m
