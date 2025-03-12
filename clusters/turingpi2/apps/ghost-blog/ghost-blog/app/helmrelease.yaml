@@ -8,4 +8,5 @@ spec:
   chartRef:
     kind: OCIRepository
     name: bitnami-ghost
+    namespace: flux-system
   interval: 30m
