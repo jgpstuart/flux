@@ -1,13 +1,13 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
 metadata:
-  name: bitnami
+  name: bitnami-ghost
   namespace: flux-system
 spec:
-  interval: 30m
-  url: https://charts.bitnami.com/bitnami
-
-
+  interval: 1h
+  url: oci://registry-1.docker.io/bitnamicharts/ghost
+  ref:
+    tag: 22.1.19
 
 
