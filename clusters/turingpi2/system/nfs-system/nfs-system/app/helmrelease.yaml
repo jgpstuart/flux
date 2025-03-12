@@ -7,10 +7,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: nfs-subdir-external-provisioner/nfs-subdir-external-provisioner
+      chart: nfs-subdir-external-provisioner/nfs-subdir-external-provisioner 
       sourceRef:
         kind: HelmRepository
-        name: nfs-system
+        name: nfs-provisioner
         namespace: flux-system
       version: 4.0.18
   interval: 30m
