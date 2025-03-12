@@ -7,3 +7,4 @@ resources:
   - ./cloudflared.yaml
   - ./jstuart.yaml
   - ./bitnami.yaml
+  - ./nfs-provisioner
