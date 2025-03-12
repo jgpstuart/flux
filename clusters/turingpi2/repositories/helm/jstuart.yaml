@@ -6,6 +6,14 @@ metadata:
 spec:
     interval: 30m
     url: https://helm.jstuart.ca/
+# apiVersion: v1
+# kind: Secret
+# type: kubernetes.io/dockerconfigjson
+# metadata:
+#     name: ghcr-login-secret
+#     namespace: default
+# data:
+#     .dockerconfigjson: eyJhdXRocyI6eyJnaGNyLmlvIjp7ImF1dGgiOiJhbWR3YzNSMVlYSjBPbWRvY0Y5cmJITmtia0pOZVVnNVoxUkRUbkp5Y0ZSUWFEVlFibXhtWVRSc1JWY3
 sops:
     kms: []
     gcp_kms: []
@@ -21,20 +29,12 @@ sops:
             LzYxMTkxdjcxQlYvSWwyRlFSTytrek0K8ES4UmCfoFG4t+EVA8yAaDKQq76pbXId
             do05FWMsVy1zqAXo9y6Tf7Fpn6bl6zjRHbnYEL325qj/WIbDvZpN8w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T13:49:39Z"
-    mac: ENC[AES256_GCM,data:86uGID9C/83pBfdTulucTw19V7scLgVGOvaOgI7XfUTU4cK8snAw/v8vizbOUY3mDF0p+2cvx0O4g6ajdyGI0U0Dh2EaG+ddLApybSfcxAPuPNUgH26kMsE3GGCQ69el+3ucPKWP8dx07dySjzYnTpk2Ub5sH2wVudq6Fk3msxY=,iv:pYtaOX/5MrwP4vxD/vi+1YpDDysSor6RUOs965jcJaY=,tag:rUZSJrIMkM6nRtQV2lYP+g==,type:str]
+    lastmodified: "2025-03-12T14:25:36Z"
+    mac: ENC[AES256_GCM,data:y6vHqRuN0xdWrJ4/Lhw1g97/FKgiwL0QfpvZ6jrwShpx5lfIiz5tyDguiX/VwygFQmAnaWtsEbTBYmIbiNyL2pNYRTs7xtCpD6kgy8fnhlEA4i4xiHEjU+Hm8tP+3rPVhNydSGUHGJ4KG6LA1fTK6+Y0SZhRnqhNkhDEarfA7NY=,iv:Jx3GPuGT6SPEgLVF/7aT9I0eaV7b6l0uLh74zgVIRFU=,tag:ydRJQmLpbGhyohTwpKLkLQ==,type:str]
     pgp: []
     encrypted_regex: ^(data)$
     version: 3.9.4
 ---
-apiVersion: v1
-kind: Secret
-type: kubernetes.io/dockerconfigjson
-metadata:
-    name: ghcr-login-secret
-    namespace: default
-data:
-    .dockerconfigjson: ENC[AES256_GCM,data:JhT7YmcK3BDVlBgpaL0noWs9vw79ii4uiGO+/6Y+26NebKQ8QErInycgFf9U5gX6vSaY3b0UKuLCTbGOCnnQVGT2S54JewyQkyXqFEH2bl2UUJVmicuvC5ae3rwbik+GgnY0jG+fuknlHvxG8zMjaFs+4ivEVA==,iv:koEV/e2OsQ3AHBTZtLirNt4soJ18uF0iXDyewtQgNyY=,tag:nb8QkkE7vpw9wyEOf31GAA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -50,8 +50,8 @@ sops:
             LzYxMTkxdjcxQlYvSWwyRlFSTytrek0K8ES4UmCfoFG4t+EVA8yAaDKQq76pbXId
             do05FWMsVy1zqAXo9y6Tf7Fpn6bl6zjRHbnYEL325qj/WIbDvZpN8w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T13:49:39Z"
-    mac: ENC[AES256_GCM,data:86uGID9C/83pBfdTulucTw19V7scLgVGOvaOgI7XfUTU4cK8snAw/v8vizbOUY3mDF0p+2cvx0O4g6ajdyGI0U0Dh2EaG+ddLApybSfcxAPuPNUgH26kMsE3GGCQ69el+3ucPKWP8dx07dySjzYnTpk2Ub5sH2wVudq6Fk3msxY=,iv:pYtaOX/5MrwP4vxD/vi+1YpDDysSor6RUOs965jcJaY=,tag:rUZSJrIMkM6nRtQV2lYP+g==,type:str]
+    lastmodified: "2025-03-12T14:25:36Z"
+    mac: ENC[AES256_GCM,data:y6vHqRuN0xdWrJ4/Lhw1g97/FKgiwL0QfpvZ6jrwShpx5lfIiz5tyDguiX/VwygFQmAnaWtsEbTBYmIbiNyL2pNYRTs7xtCpD6kgy8fnhlEA4i4xiHEjU+Hm8tP+3rPVhNydSGUHGJ4KG6LA1fTK6+Y0SZhRnqhNkhDEarfA7NY=,iv:Jx3GPuGT6SPEgLVF/7aT9I0eaV7b6l0uLh74zgVIRFU=,tag:ydRJQmLpbGhyohTwpKLkLQ==,type:str]
     pgp: []
     encrypted_regex: ^(data)$
     version: 3.9.4
