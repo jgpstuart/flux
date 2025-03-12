@@ -2,8 +2,10 @@ cloudflare:
     tunnelName: jstuart.ca
     secretName: tunnel-credentials
     ingress:
-      - hostname: blog.jstuart.ca
-        service: http://httpbin.default:80
+      - hostname: jstuart.ca
+        service: http://personal-site.homepage:80
+      - hostname: www.jstuart.ca
+        service: http://personal-site.homepage:80
 resources:
     limits:
         cpu: 100m
