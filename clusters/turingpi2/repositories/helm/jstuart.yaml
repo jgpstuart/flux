@@ -6,3 +6,52 @@ metadata:
 spec:
     interval: 30m
     url: https://helm.jstuart.ca/
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3TlJsQjdKN0pwS05mRGx5
+            Vi96dERoM0xVRHdXOTF6bU5qcVB5NUhBZ0RFCnI4SWVxKzN0cTlDMTdlRzJVcjZs
+            NUswWDIxVzJrMExab2dTNVNaK21UekEKLS0tIGt2TWxSTlR3K3M0Nzk2ZHJxTjRn
+            a0JYb1Z2dzZlTm50MFlCdHVyRU16cHcKdePN/yDQbnWR2aST5lrQdU+ISOjiaxDR
+            hBl145yoEYn+sShwz+ubYTILJ21SWaAc7DCJD6LDOXCvHjyI1Op8ZQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-03-12T16:15:30Z"
+    mac: ENC[AES256_GCM,data:uJ4p8vRfLRu+kR6H65E/ncQ1GDZ4GEkXbX6y6DJykTvYBgd0G9xiz9yyS/XoBVU0YX89sGtR+Z+5mtQ9Szbp/x1xNIjciYH+unmrRNMEo6fbeOEXNmu5TQVe9OJLT005l5wti6f7htr1Hoc2QxHy976pvSh7SDj92/F9R6MpqKE=,iv:/Z8KY0hxrvQTuzQ9Pt7rpj/t51ccbxtoe2WkqfW5ve4=,tag:SJkG7ZygtaO17ox/jrDKVA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data)$
+    version: 3.9.4
+---
+apiVersion: v1
+kind: Secret
+type: kubernetes.io/dockerconfigjson
+metadata:
+    name: ghcr-login-secret
+    namespace: homepage
+data:
+    .dockerconfigjson: ENC[AES256_GCM,data:c2BiW7uCaqOP4ElOdDi0bpN7ksI/fdS1X6w0D2YCe0CFCPXaurFkU27L6gRnhRg4V3amisp/8TdsiJ0VhaMN/HfZpXA5K7qbwyPsX4Bq/nOHtUhm7I3pK2ENQM2Lv7b5VXV29MFV+wsCwvfTApOjinGMWHX9tlixLCMy13g0tnxNjeccQfp8Bg==,iv:DnR6oKXULNwh/tjU80ftw/3FYgJhrofY2T2ozd3QKEY=,tag:4T8bsr94++P5k6dNmF+i9w==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3TlJsQjdKN0pwS05mRGx5
+            Vi96dERoM0xVRHdXOTF6bU5qcVB5NUhBZ0RFCnI4SWVxKzN0cTlDMTdlRzJVcjZs
+            NUswWDIxVzJrMExab2dTNVNaK21UekEKLS0tIGt2TWxSTlR3K3M0Nzk2ZHJxTjRn
+            a0JYb1Z2dzZlTm50MFlCdHVyRU16cHcKdePN/yDQbnWR2aST5lrQdU+ISOjiaxDR
+            hBl145yoEYn+sShwz+ubYTILJ21SWaAc7DCJD6LDOXCvHjyI1Op8ZQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-03-12T16:15:30Z"
+    mac: ENC[AES256_GCM,data:uJ4p8vRfLRu+kR6H65E/ncQ1GDZ4GEkXbX6y6DJykTvYBgd0G9xiz9yyS/XoBVU0YX89sGtR+Z+5mtQ9Szbp/x1xNIjciYH+unmrRNMEo6fbeOEXNmu5TQVe9OJLT005l5wti6f7htr1Hoc2QxHy976pvSh7SDj92/F9R6MpqKE=,iv:/Z8KY0hxrvQTuzQ9Pt7rpj/t51ccbxtoe2WkqfW5ve4=,tag:SJkG7ZygtaO17ox/jrDKVA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data)$
+    version: 3.9.4
