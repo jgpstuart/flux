@@ -2,12 +2,12 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: homepage
+  name: quartz-blog
   namespace: homepage
 spec:
   chart:
     spec:
-      chart: personal-site
+      chart: quartz-blog
       sourceRef:
         kind: HelmRepository
         name: jstuart
