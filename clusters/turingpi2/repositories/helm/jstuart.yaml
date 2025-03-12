@@ -15,14 +15,14 @@ sops:
         - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzb0JGSDBocitYa0Z4R0hS
-            cDg0WUpCQ2MzTGRRaThJb0FzRTRpMkVpK0JZCndSQmdyMWN2VDV4N3l1T0ZrWnFl
-            cXZTTjkybHhFSEI5bE5DOFZyNTR2OUUKLS0tIG45eGJ1cFZvQ0tNSGlRZDVaK2Q5
-            TVdpaWFoR29Dd1dOdmtDR29ER0NhM0kK3twF9wK8A08JfyfxEmc+OZii3Sr5flDW
-            mOGQrEMbrWmhrDkry6cNUmlRHu8wsPq7dGp5T8q3C1lpXe9MZ+/uqQ==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzcCthb29pTWtVTmFXaHlI
+            cTdtUGlCekxqeXp3RFFyV3JPYUtWVDdqUkJBCmJjMmRiRW03aXZMT0gvaDVhK2V4
+            SnJMdnZPeW4zRUdlY25pVVUwd0ZPMGMKLS0tIENBZTV0bVVHYWdoaXpwc0V6eVRS
+            aFVIVUpKWmVhYnNHenF1czVlVXVMNXMK5qqpjHSM1F2yX4QzCZvA1b3QD7ypSvEv
+            Gx9QgAyTmW68k4Shx0bRuII4z3RuOPOG21kaFVJEtp1WoikfURU6Ew==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T15:10:09Z"
-    mac: ENC[AES256_GCM,data:krEAkvZFP9TsGPb+XWnZVJCCLWyMNl5OSeijoemjDZhcp4eNjZNxuOoMno1wUnwMgYZsE9dcll8JE4o4Mo30RSH8eilSZLDxu4gd9VfoKNek1a0GjMcRG7N2psW9JaC5KZmmhFf81UkFbHOE1CsNfWGSrdJ+SVD11pB01e+e1N8=,iv:F/hY4CUvyyrYWWVd2UIAgW6gP2qFSRM/IAQ3msa4kjk=,tag:6d39nIR9mpobjhAOxxyRHg==,type:str]
+    lastmodified: "2025-03-12T15:40:35Z"
+    mac: ENC[AES256_GCM,data:CeAYnXDrOybvOFqFUyrrKZ4+NmF+ajNbxf4EWj1V1rqhGOY/0TE3HMP6zz/7v1NRKUR2R2LkVB3QTraII4xPkNURY/xE9TiS9fA5h0k6MdzW673eGkXdqxt3Ju2+Naq8aZZI8hyvdKsCQu3EH5XP07Xr2WVPhM1j2fyXy+eA/Kw=,iv:4PBDZvp6r29NXVnLP8hMVxM5+xF2M+/QgHgywcS1QQI=,tag:47cX28Md9CwrVOEDQfjaYQ==,type:str]
     pgp: []
     encrypted_regex: ^(data)$
     version: 3.9.4
@@ -34,7 +34,7 @@ metadata:
     name: ghcr-login-secret
     namespace: default
 data:
-    .dockerconfigjson: ENC[AES256_GCM,data:XqC5MA4VRXyF8G+BnyepSH187o8Q9G+v9S5tVsuSMKdJjCJpBOyaVmvMPngn9zv5luIxmQxx0KlFxLXdNdy4HchNaKxR7uBR5Q6/KKb6/j5eeiyGYHjZlX9vDr3dcnm/ofYo/+Q=,iv:5+jcFeEIbWWNV2LEUpuqgk9GCooQs/MvTE3KQXISTP8=,tag:ZvLtjOGRWO/Trfa1nSaYtg==,type:str]
+    .dockerconfigjson: ENC[AES256_GCM,data:1R7dZL3XoEO+KNTaTSvBaNAXh2ohMT19jG3hNxyXU+cIE5sF+z0IRthUH+vdaym8O9XBTtYq/rOemNK/xE2YIxOq70RttrBg1e0KiAb18JQWiGiw03/6mGi32Z9hbdCIi449R3XDeUgqiKpa6J/dkXkVqCek6sBn+gEiKu2xl08tx7zvs9BTIg==,iv:oe7Q7cTS1h4t7LIUrYqAWs6WUx5KfCoeQjjPcjKIbTg=,tag:CT6aidM8y7dDj/II+xrEfQ==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -44,14 +44,14 @@ sops:
         - recipient: age1ls9x0qp4pwlca3mshmh5js355nvk4wrktc3538agvrdv645duvgqr7708h
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzb0JGSDBocitYa0Z4R0hS
-            cDg0WUpCQ2MzTGRRaThJb0FzRTRpMkVpK0JZCndSQmdyMWN2VDV4N3l1T0ZrWnFl
-            cXZTTjkybHhFSEI5bE5DOFZyNTR2OUUKLS0tIG45eGJ1cFZvQ0tNSGlRZDVaK2Q5
-            TVdpaWFoR29Dd1dOdmtDR29ER0NhM0kK3twF9wK8A08JfyfxEmc+OZii3Sr5flDW
-            mOGQrEMbrWmhrDkry6cNUmlRHu8wsPq7dGp5T8q3C1lpXe9MZ+/uqQ==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzcCthb29pTWtVTmFXaHlI
+            cTdtUGlCekxqeXp3RFFyV3JPYUtWVDdqUkJBCmJjMmRiRW03aXZMT0gvaDVhK2V4
+            SnJMdnZPeW4zRUdlY25pVVUwd0ZPMGMKLS0tIENBZTV0bVVHYWdoaXpwc0V6eVRS
+            aFVIVUpKWmVhYnNHenF1czVlVXVMNXMK5qqpjHSM1F2yX4QzCZvA1b3QD7ypSvEv
+            Gx9QgAyTmW68k4Shx0bRuII4z3RuOPOG21kaFVJEtp1WoikfURU6Ew==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-12T15:10:09Z"
-    mac: ENC[AES256_GCM,data:krEAkvZFP9TsGPb+XWnZVJCCLWyMNl5OSeijoemjDZhcp4eNjZNxuOoMno1wUnwMgYZsE9dcll8JE4o4Mo30RSH8eilSZLDxu4gd9VfoKNek1a0GjMcRG7N2psW9JaC5KZmmhFf81UkFbHOE1CsNfWGSrdJ+SVD11pB01e+e1N8=,iv:F/hY4CUvyyrYWWVd2UIAgW6gP2qFSRM/IAQ3msa4kjk=,tag:6d39nIR9mpobjhAOxxyRHg==,type:str]
+    lastmodified: "2025-03-12T15:40:35Z"
+    mac: ENC[AES256_GCM,data:CeAYnXDrOybvOFqFUyrrKZ4+NmF+ajNbxf4EWj1V1rqhGOY/0TE3HMP6zz/7v1NRKUR2R2LkVB3QTraII4xPkNURY/xE9TiS9fA5h0k6MdzW673eGkXdqxt3Ju2+Naq8aZZI8hyvdKsCQu3EH5XP07Xr2WVPhM1j2fyXy+eA/Kw=,iv:4PBDZvp6r29NXVnLP8hMVxM5+xF2M+/QgHgywcS1QQI=,tag:47cX28Md9CwrVOEDQfjaYQ==,type:str]
     pgp: []
     encrypted_regex: ^(data)$
     version: 3.9.4
