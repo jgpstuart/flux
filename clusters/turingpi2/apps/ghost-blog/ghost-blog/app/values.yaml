@@ -12,6 +12,3 @@ ingress:
 persistence:
   enabled: true
   size: 50G
-mysql:
-  auth:
-    existingSecret: "ghost-mysql-password"
