@@ -1,3 +1,5 @@
+ghost:
+  host: blog.jstuart.ca
 ghostUsername: jgpstuart@gmail.com
 existingSecret: "ghost-credentials"
 ghostBlogTitle: Hot Ginger&Dynamite
