@@ -8,6 +8,8 @@ cloudflare:
         service: http://personal-site.homepage:80
       - hostname: quartz.jstuart.ca
         service: http://quartz-blog.homepage:80
+      - hostname: blog.jstuart.ca
+        service: http://ghost-blog.homepage:80
 resources:
     limits:
         cpu: 100m
