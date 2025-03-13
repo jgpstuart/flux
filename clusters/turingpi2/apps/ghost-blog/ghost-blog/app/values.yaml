@@ -2,7 +2,7 @@ ghostUsername: jgpstuart@gmail.com
 existingSecret: "ghost-credentials"
 ghostBlogTitle: Hot Ginger&Dynamite
 ghostEnableHttps: false
-allowEmptyPassword: true
+allowEmptyPassword: false
 resourcesPreset: "2xlarge"
 service:
   type: NodePort
@@ -12,3 +12,6 @@ ingress:
 persistence:
   enabled: true
   size: 50G
+mysql:
+  auth:
+    existingSecret: "ghost-mysql-password"

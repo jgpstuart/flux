@@ -10,3 +10,6 @@ spec:
     name: bitnami-ghost
     namespace: flux-system
   interval: 30m
+  valuesFrom:
+    - kind: ConfigMap
+      name: ghost-values
