@@ -12,6 +12,8 @@ ingress:
   enabled: true
   hostname: blog.jstuart.ca
   ingressClassName: "nginx"
+  annotations: "nginx.ingress.kubernetes.io/server-snippet: |
+       proxy_set_header X-Forwarded-Proto https;"
 persistence:
   enabled: true
   size: 50G
