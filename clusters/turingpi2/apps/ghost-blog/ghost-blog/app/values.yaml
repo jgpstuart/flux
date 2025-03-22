@@ -3,7 +3,7 @@ ghostUsername: jgpstuart@gmail.com
 ghostEmail: jgpstuart@gmail.com
 existingSecret: "ghost-credentials"
 ghostBlogTitle: Hot Ginger&Dynamite
-ghostEnableHttps: false
+ghostEnableHttps: true
 allowEmptyPassword: false
 resourcesPreset: "2xlarge"
 service:
