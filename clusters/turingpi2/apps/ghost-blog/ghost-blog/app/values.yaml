@@ -4,12 +4,13 @@ ghostEmail: jgpstuart@gmail.com
 existingSecret: "ghost-credentials"
 ghostBlogTitle: Hot Ginger&Dynamite
 ghostEnableHttps: true
+ingressClassName: "nginx"
 allowEmptyPassword: false
 resourcesPreset: "2xlarge"
 service:
   type: NodePort
 ingress:
-  enabled: false
+  enabled: true
   hostname: blog.jstuart.ca
 persistence:
   enabled: true
