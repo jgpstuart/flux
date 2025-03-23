@@ -12,6 +12,8 @@ ingress:
   enabled: true
   hostname: blog.jstuart.ca
   ingressClassName: "nginx"
+  # x-forwarded-proto for letting ghost know it's behind a proxy and reply with https over port 80
+  # max-body-size for increasing the size of photo, media, and file uploads to 10mb
   annotations: {
     nginx.org/proxy-set-headers: "x-forwarded-proto: https",
     nginx.org/client-max-body-size: 10m
