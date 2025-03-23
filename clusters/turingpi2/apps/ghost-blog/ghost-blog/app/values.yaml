@@ -13,8 +13,7 @@ ingress:
   hostname: blog.jstuart.ca
   ingressClassName: "nginx"
   annotations: {
-    nginx.ingress.kubernetes.io/secure-backends: "true",
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.org/proxy-set-headers: "x-forwarded-proto: https"
   }
 persistence:
   enabled: true
