@@ -9,7 +9,7 @@ cloudflare:
       - hostname: quartz.jstuart.ca
         service: http://quartz-blog.homepage:80
       - hostname: blog.jstuart.ca
-        service: http://ghost-blog.homepage:80
+        service: http://nginx-nginx-ingress-controller.nginx-system:80
 resources:
     limits:
         cpu: 100m
