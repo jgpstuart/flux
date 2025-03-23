@@ -13,7 +13,8 @@ ingress:
   hostname: blog.jstuart.ca
   ingressClassName: "nginx"
   annotations: {
-    nginx.org/proxy-set-headers: "x-forwarded-proto: https"
+    nginx.org/proxy-set-headers: "x-forwarded-proto: https",
+    nginx.org/client-max-body-size: 10m
   }
 persistence:
   enabled: true
