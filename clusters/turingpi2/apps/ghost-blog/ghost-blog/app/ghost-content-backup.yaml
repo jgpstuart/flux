@@ -3,7 +3,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: sql-cron-backup
-  namespace: ghost-jstuart
+  namespace: homepage
 spec:
   schedule: "0 4 * * *" # daily at 4am
   jobTemplate:
