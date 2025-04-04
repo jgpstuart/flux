@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: sql-cron-backup
+  name: ghost-content-backup
   namespace: homepage
 spec:
   schedule: "0 4 * * *" # daily at 4am
@@ -23,7 +23,11 @@ spec:
               tar -czf /backup/ghost-content/ghost-content-$(date +%d-%m-%y).tar.gz ./images/ ./files/ ./media/
               &&
               ls -tp /backup/ghost-content/*.tar.gz | grep -v '/$' | tail -n +$((3+1)) | tr '\\n' '\\0' | xargs -r -0 rm --" ]
-            
+            resources:
+              requests:
+                cpu: "1000Mi"
+              limits:
+                cpu: "2000Mi"
             volumeMounts:
               - mountPath: /backup
                 name: backup-directory
