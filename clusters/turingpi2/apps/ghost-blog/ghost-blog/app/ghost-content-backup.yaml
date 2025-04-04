@@ -1,0 +1,48 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sql-cron-backup
+  namespace: ghost-jstuart
+spec:
+  schedule: "0 4 * * *" # daily at 4am
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: content-backup
+            image: busybox
+            imagePullPolicy: IfNotPresent
+            command: ["/bin/sh", "-c"]
+            args: [
+              # make directory (won't fail if it exists)
+              "mkdir -p /backup/ghost-content/;
+              cd /storage/homepage-ghost-blog-pvc-*/content/
+              &&
+              tar -czf /backup/ghost-content/ghost-content-$(date +%d-%m-%y).tar.gz /images/ /files/ /media/
+              &&
+              ls -tp /backup/ghost-content/*.tar.gz | grep -v '/$' | tail -n +$((3+1)) | tr '\\n' '\\0' | xargs -r -0 rm --" ]
+            
+            volumeMounts:
+              - mountPath: /backup
+                name: backup-directory
+              - mountPath: /storage
+                name: storage-directory
+          restartPolicy: OnFailure
+          volumes:
+          - name: backup-directory
+            # NOTE: this will backup to a local directory available to the cluster that's accessible from the node hosting the pod
+            hostPath:
+              # directory location on host
+              path: /backup
+              type: DirectoryOrCreate
+          - name: storage-directory
+            # NOTE: this will backup to a local directory available to the cluster that's accessible from the node hosting the pod
+            hostPath:
+              # directory location on host
+              path: /storage
+              type: DirectoryOrCreate
+          nodeSelector:
+            # must run on node3 as it's the only one with access to the /backup storage drive
+            kubernetes.io/hostname: tp2-node3
