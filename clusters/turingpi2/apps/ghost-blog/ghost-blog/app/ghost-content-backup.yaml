@@ -20,7 +20,7 @@ spec:
               "mkdir -p /backup/ghost-content/;
               cd /storage/homepage-ghost-blog-pvc-*/content/
               &&
-              tar -czf /backup/ghost-content/ghost-content-$(date +%d-%m-%y).tar.gz /images/ /files/ /media/
+              tar -czf /backup/ghost-content/ghost-content-$(date +%d-%m-%y).tar.gz ./images/ ./files/ ./media/
               &&
               ls -tp /backup/ghost-content/*.tar.gz | grep -v '/$' | tail -n +$((3+1)) | tr '\\n' '\\0' | xargs -r -0 rm --" ]
             
