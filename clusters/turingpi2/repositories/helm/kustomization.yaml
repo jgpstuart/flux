@@ -8,3 +8,4 @@ resources:
   - ./jstuart.yaml
   - ./bitnami.yaml
   - ./nfs-provisioner.yaml
+  - ./actions-runner-controller.yaml
