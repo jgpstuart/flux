@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - ghost-secrets.yaml
   - helmrelease.yaml
+  - ghost-content-backup.yaml
 configMapGenerator:
   - name: ghost-values
     files:
