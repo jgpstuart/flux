@@ -10,6 +10,6 @@ configMapGenerator:
 secretGenerator:
   - name: arc-runner-set-secret-quartz
     files:
-      - values.yaml=secret.yaml
+      - secret.yaml
 configurations:
   - kustomizeconfig.yaml
