@@ -1,0 +1,7 @@
+---
+githubConfigUrl: https://github.com/jgpstuart/quartz-blog
+runnerScaleSetName: arc-runner
+minRunners: 1
+maxRunners: 1
+containerMode:
+  type: dind
