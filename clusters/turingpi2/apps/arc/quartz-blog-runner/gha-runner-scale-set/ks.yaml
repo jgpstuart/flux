@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   targetNamespace: arc-system
-  path: ./clusters/turingpi2/apps/arc/system/gha-runner-scale-set/app
+  path: ./clusters/turingpi2/apps/arc/quartz-blog-runner/gha-runner-scale-set/app
   sourceRef:
     kind: GitRepository
     name: flux-system
