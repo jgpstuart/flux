@@ -5,3 +5,4 @@ minRunners: 1
 maxRunners: 1
 containerMode:
   type: dind
+githubConfigSecret: arc-runner-set-secret-quartz
