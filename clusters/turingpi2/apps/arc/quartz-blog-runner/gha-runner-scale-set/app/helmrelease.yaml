@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: arc-runner-set
+  name: arc-runner-quartz
   namespace: arc-system
 spec:
   chart:
