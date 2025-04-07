@@ -26,5 +26,3 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: arc-runner-set-values
-    - kind: Secret
-      name: arc-runner-set-secret-quartz
