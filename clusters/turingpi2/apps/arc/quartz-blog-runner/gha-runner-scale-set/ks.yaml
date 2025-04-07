@@ -2,7 +2,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: arc-system
+  name: arc-runner-quartz
   namespace: flux-system
 spec:
   targetNamespace: arc-system
