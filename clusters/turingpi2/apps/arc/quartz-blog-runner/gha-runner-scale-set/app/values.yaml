@@ -1,8 +1,8 @@
 ---
 githubConfigUrl: https://github.com/jgpstuart/quartz-blog
 runnerScaleSetName: arc-runner-quartz
-minRunners: 1
-maxRunners: 1
+minRunners: 0
+maxRunners: 3
 containerMode:
   type: dind
 githubConfigSecret: arc-runner-set-secret-quartz
