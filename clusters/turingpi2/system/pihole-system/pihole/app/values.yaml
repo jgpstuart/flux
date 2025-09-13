@@ -1,0 +1,22 @@
+---
+nodeSelector: tp2-node2
+# DNS servers that pi-hole will use
+DNS1: 9.9.9.9
+DNS2: 1.1.1.1
+persistentVolumeClaim:
+  enabled: true
+admin:
+  # admin access secret
+  existingSecret: "pihole-admin"
+serviceDns:
+  # combine the TCP and UDP services
+  mixedService: true
+# Don't need DHCP
+serviceDhcp:
+  enabled: false
+podDnsConfig:
+  enabled: true
+  policy: "None"
+  nameservers:
+  - 127.0.0.1
+  - 9.9.9.9

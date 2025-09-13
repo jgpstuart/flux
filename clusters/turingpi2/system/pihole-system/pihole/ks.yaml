@@ -1,0 +1,17 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: pihole
+  namespace: flux-system
+spec:
+  targetNamespace: pihole-system
+  path: ./clusters/turingpi2/system/pihole-system/pihole/app
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  prune: true
+  wait: true
+  interval: 30m
+  retryInterval: 1m
+  timeout: 5m
