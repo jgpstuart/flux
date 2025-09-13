@@ -1,5 +1,5 @@
 ---
-nodeSelector: tp2-node2
+nodeSelector: "tp2-node2"
 # DNS servers that pi-hole will use
 DNS1: 9.9.9.9
 DNS2: 1.1.1.1
