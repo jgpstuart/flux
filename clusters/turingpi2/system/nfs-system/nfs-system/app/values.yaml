@@ -1,5 +1,5 @@
 nfs:
-  server: 192.168.2.203
+  server: 10.20.1.13
   path: /storage
 storageClass:
   defaultClass: true
