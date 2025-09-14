@@ -11,7 +11,7 @@ admin:
   existingSecret: "pihole-admin"
 serviceDns:
   mixedService: true
-  loadBalancerIP: 10.20.1.12
+  loadBalancerIP: 10.20.1.9
   type: LoadBalancer
 # Don't need DHCP
 serviceDhcp:
