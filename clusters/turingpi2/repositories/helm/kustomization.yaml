@@ -10,3 +10,4 @@ resources:
   - ./nfs-provisioner.yaml
   - ./actions-runner-controller.yaml
   - ./pihole.yaml
+  - ./uptime-kuma.yaml
